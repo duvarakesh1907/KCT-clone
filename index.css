@@ -1,0 +1,234 @@
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 16px;
+}
+body {
+  color: #1b2840;
+  font-family: "segoeuiregular", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 4rem;
+  align-items: center;
+}
+.brandLogo {
+  display: flex;
+  height: 5rem;
+  width: auto;
+}
+.headSearch {
+  position: relative;
+  flex: 1 1 0;
+  min-width: 0;
+  margin-bottom: 0;
+}
+.navBtn {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .socials {
+    display: none;
+  }
+  .navList {
+    height: 85vh;
+    display: none;
+  }
+  .navBtn {
+    display: block;
+  }
+  .active {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+}
+
+.socialContainer,
+.socialContainer > a {
+  color: #707070;
+}
+.socialContainer .fa-brands {
+  padding: 10px 7.2px 7.2px 0px;
+}
+.navbar {
+  background-color: #1b2840;
+  border-radius: 0px;
+}
+.navbar li {
+  float: left;
+  list-style: none;
+  margin: 13px 20px;
+}
+.navbar ul {
+  overflow: auto;
+}
+.navbar li a {
+  padding: 1px 1px;
+  text-decoration: none;
+  color: white;
+}
+.centeredTextContainer {
+  background: url("./assets/Home-banner.png");
+  position: relative;
+  height: 602px;
+}
+.centeredText {
+  font-weight: 100;
+  letter-spacing: 10px;
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+.centeredText .T1 {
+  font-style: normal;
+  font-weight: bolder;
+  text-align: center;
+}
+.centeredText .T2 {
+  font-weight: 700 !important;
+  font-size: 5rem !important;
+  text-decoration: underline;
+}
+
+.homebanner {
+  position: absolute;
+  width: auto;
+  height: 602px;
+}
+.centeredText {
+  border: none;
+  font-size: inherit;
+  line-height: inherit;
+  margin: 0;
+  padding: 0;
+  text-align: inherit;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.programes {
+  padding: 4rem;
+  text-align: center;
+  color: #1b2840;
+}
+.pageTitle {
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bolder;
+}
+.pageContent {
+  font-size: 1rem;
+  padding: 2rem 8vw;
+}
+.cardContainer {
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+}
+.card {
+  border-radius: 20px;
+  width: 425px;
+
+  box-shadow: 0px 3px 6px #00000029;
+}
+.cardImage {
+  width: 100%;
+  height: 183px;
+  object-fit: cover;
+}
+.cardTitle {
+  padding: 1rem;
+}
+.cardBody {
+  padding: 2rem 2rem;
+  text-align: justify;
+}
+.about {
+  display: flex;
+  width: 100vw;
+}
+.events {
+  width: 50vw;
+  background-color: #efefef;
+  display: flex;
+  gap: 3rem;
+  padding: 7.5rem;
+  height: 1000px;
+  position: relative;
+  flex-direction: column;
+}
+.aTitle {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-align: left;
+}
+.aContent {
+  font-size: 1.2rem;
+}
+.aMore {
+  align-self: flex-end;
+  justify-self: flex-end;
+  font-weight: bold;
+  padding: 1.2rem 2.4rem;
+  border-radius: 20rem;
+  border: none;
+  outline: none;
+  background-color: #1b2840;
+  color: white;
+  font-size: 1.1rem;
+}
+.events .aMore {
+  position: absolute;
+  bottom: 7rem;
+}
+.Announcement {
+  width: 50vw;
+  display: flex;
+  justify-content: space-between;
+  padding: 7.5rem;
+  flex-direction: column;
+}
+.nextBox {
+  display: flex;
+
+  width: 100vw;
+}
+.para {
+  width: 50vw;
+  background-color: #0693;
+  display: flex;
+  text-align: justify;
+  gap: 3rem;
+  align-items: center;
+  padding: 5rem;
+  flex-direction: column;
+  line-height: 2;
+  font-size: 1.2rem;
+}
+.para > h1 {
+  text-align: left;
+}
+.video {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+marquee > h1 {
+  padding: 1.75rem 0;
+}
